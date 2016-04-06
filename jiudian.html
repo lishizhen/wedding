@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" /> 
+<title>酒店</title>
+<link rel="stylesheet" href="css/css.css" />
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/myjs.js"></script>
+<script type="text/javascript" src="js/swipe.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#zhuohao').height($(window).height());
+    $('#zhuohao').width($(window).width());
+});
+</script>
+
+</head>
+
+<body>
+<div id="zhuohao" onclick="javascript:location.href='index.html'">
+	<div class="back">
+    	<img src="images/back.png"/>
+    </div>
+    <!--导航开始-->
+    		<div id='mySwipe' class='swipe'>
+              <div class='swipe-wrap'>
+                <div><img src="images/1.jpg"></div>
+                <div><img src="images/1.jpg"></div>
+                <div><img src="images/1.jpg"></div>
+              </div>
+              <ul>
+              	<li class="current"></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+    <!--导航结束-->
+    <div class="jiudiancontent">
+    	<p>名称：上海大酒店</p>
+    	<p>地址：黄浦区XX路XX号</p>
+    	<p>婚宴时间：2014年11月22日19时整</p>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

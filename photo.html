@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" /> 
+<title>相片墙页面</title>
+<link rel="stylesheet"  href="css/lightGallery.css"/>
+<link rel="stylesheet" href="css/css.css" />
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <style>
+    	ul{
+			margin:5px auto;
+			list-style: none outside none;
+			box-sizing:border-box;
+			margin-left:16%;
+			
+		}
+		.gallery li {
+			display: block;
+			float: left;
+			height: 100px;
+			width: 100px;
+			margin:5px;
+		}
+		.gallery li a {
+			height: 100px;
+			width: 100px;
+		}
+		.gallery li a img {
+			max-width: 100px;
+		}
+    </style>
+    <script src="js/lightGallery.js"></script>
+    <script>
+    	 $(document).ready(function() {
+			$("#auto-loop").lightGallery({
+				loop:true,
+				auto:true,
+				pause:4000
+			});
+		});
+    </script>
+
+</head>
+<body>
+	<div class="back" onclick="javascript:location.href='index.html'">
+    	<img src="images/back.png"/>
+    </div>
+
+	<ul id="auto-loop" class="gallery">
+        <li data-src="images/img1.jpg"> 
+        	<a href="#">
+            <img src="images/thumb1.jpg" />
+            </a> 
+        </li>
+        <li data-src="images/img2.jpg" > 
+        	<a href="#">
+            <img src="images/thumb2.jpg" />
+            </a> 
+        </li>
+        <li data-src="images/img3.jpg"> 
+        	<a href="#">
+            <img src="images/thumb3.jpg" />
+            </a> 
+        </li>
+        <li data-src="images/img4.jpg" > 
+        	<a href="#">
+            <img src="images/thumb4.jpg" />
+            </a> 
+        </li>
+        <li data-src="images/img3.jpg"> 
+        	<a href="#">
+            <img src="images/thumb3.jpg" />
+            </a> 
+        </li>
+        <li data-src="images/img3.jpg"> 
+        	<a href="#">
+            <img src="images/thumb3.jpg" />
+            </a> 
+        </li>
+        
+    </ul>	
+</body>
+</html>
